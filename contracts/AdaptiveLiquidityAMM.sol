@@ -26,7 +26,7 @@ contract AdaptiveLiquidityAMM is ReentrancyGuard, Ownable, Pausable {
     uint256 public constant WEIGHT_PRECISION = 1e18;
     uint256 public constant FEE_PRECISION = 10000;
     uint256 public baseFee = 30; // 0.3%
-    uint256 public dynamicFeeRange = 20; // ±0.2%
+    uint256 public dynamicFeeRange = 20; // 0.2%
     uint256 public impermanentLossFund;
     uint256 public lastRebalanceTimestamp;
     uint256 public rebalanceInterval = 1 hours;
